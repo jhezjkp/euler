@@ -28,9 +28,12 @@ What is the first term in the Fibonacci sequence to contain 1000 digits?
 
 f1 = 1
 f2 = 1
+index = 2
 result = f1 + f2
 while len(str(result)) < 1000:
-	result = f1 + f2
-	f1 = f2
-	f2 = result
+    result = f1 + f2
+    index += 1
+    f1 = f2
+    f2 = result
 print result
+print index
